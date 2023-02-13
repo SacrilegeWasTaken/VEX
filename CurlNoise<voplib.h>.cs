@@ -4,6 +4,7 @@ noise = vop_curlNoiseVV({ 0, 0, 0 }, { 1, 1, 1 }, { 0, 0, 0 }, { 0, 0, 0 }, "pno
 //EXPLAINING//
 noise = vop_curlNoiseVV(Position, Frequency, Offset, SurfaceNormal, "NoiseType", "CollisionSDF", Turbulence, EnableBouncingSDF, Amplitude, Roughness, Attenuation, Distance_to_Surface, SurfaceFX_Radius, StepSize);
 vector = Position, Frequency, Offset, SurfaceNormal;
-int = Turbulence, EnableBouncingSDF('0 or 1 only, 0 - off, 1 - on');
+int = Turbulence, EnableBouncingSDF;
 float = Amplitude, Roughness, Attenuation, StepSize, SurfaceFX_Radius, Distance_to_Surface;
-string = NoiseType, Collision SDF;
+string = NoiseType, CollisionSDF;
+//EnableBouncingSDF - ('0 or 1 only, 0 - off, 1 - on')
